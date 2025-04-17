@@ -1,0 +1,26 @@
+[
+
+	{
+		"type": "Cat",
+		"color": "orange",
+		"name": "Muning"
+	},
+
+	{
+		"type": "Dog",
+		"color": "green",
+		"name": "Sakuragi-ino"
+	},
+
+	{
+		"type": "Horse",
+		"color": "maroon",
+		"name": "Gara"
+	},
+	
+	{
+		"type": "Hamster",
+		"color": "mixed-white-orange",
+		"name": "Coby"
+	}
+]
