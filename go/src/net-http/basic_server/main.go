@@ -1,7 +1,9 @@
 package main
 
 import (
+	"log"
 	"main/data"
+	"main/middlewares"
 	"main/router"
 	"net/http"
 )
@@ -12,4 +14,14 @@ func main() {
 	Router := http.NewServeMux()
 	db := data.DB()
 	router.Init(db, Router)
+
+	// create a new server
+	server := http.Server{
+		Addr:    ":8000",
+		Handler: middlewares.Log(Router),
+	}
+
+	log.Printf("Server is running at port 8000")
+	log.Fatal(server.ListenAndServe())
+
 }

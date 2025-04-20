@@ -3,6 +3,7 @@ package data
 import (
 	"bufio"
 	"encoding/json"
+	"iter"
 	"log"
 	"os"
 )
@@ -10,7 +11,7 @@ import (
 type ProductInfo struct {
 	Name  string  `json:"name"`
 	Type  string  `json:"type"`
-	Price float64 `json:"prince"`
+	Price float64 `json:"price"`
 }
 
 type ProductMeta struct {
@@ -61,3 +62,12 @@ func DB() Datas {
 }
 
 // get the data
+func (d *Datas) IterThrough() iter.Seq2[int, *Product] {
+	return func(yield func(int, *Product) bool) {
+		for i := range *d {
+			if !yield(i, &((*d)[i])) {
+				return
+			}
+		}
+	}
+}

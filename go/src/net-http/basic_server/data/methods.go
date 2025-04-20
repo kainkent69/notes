@@ -48,11 +48,10 @@ func (d *Datas) Append(p Product) {
 }
 
 func (d *Datas) Save() error {
-	path := "./data/data.go"
+	path := "./data/data.json"
 
 	// parse the data
-	dataslice := make(Datas, 0)
-	datastr, err := json.Marshal(dataslice)
+	datastr, err := json.MarshalIndent(*d, "", "  ")
 	if err != nil {
 		return err
 	}

@@ -1,72 +1,67 @@
 [
   {
     "id": 1,
+    "tags": [
+      "clothing",
+      "casual",
+      "summer"
+    ],
     "info": {
       "name": "Awesome T-Shirt",
-      "type": "Apparel",
-      "prince": 25.99
-    },
-    "meta": {
-      "code": "TSHIRT-A123",
+      "type": "Apparel", "price": 25.99 }, "meta": { "code": "TSHIRT-A123",
       "stock": 150
-    },
-    "tags": ["clothing", "casual", "summer"],
-    "Others": ["color:blue", "size:M"]
+    }
   },
   {
     "id": 2,
+    "tags": [
+      "computer accessories",
+      "wireless",
+      "ergonomic"
+    ],
     "info": {
       "name": "Wireless Mouse Pro",
       "type": "Electronics",
-      "prince": 49.50
+      "price": 49.5
     },
     "meta": {
       "code": "MOUSE-W002",
       "stock": 75
-    },
-    "tags": ["computer accessories", "wireless", "ergonomic"],
-    "Others": ["dpi:1600", "buttons:5"]
+    }
   },
   {
     "id": 3,
+    "tags": [
+      "food",
+      "drink",
+      "organic",
+      "roasted"
+    ],
     "info": {
       "name": "Organic Coffee Beans",
       "type": "Beverage",
-      "prince": 12.75
+      "price": 12.75
     },
     "meta": {
       "code": "COFFEE-B045",
       "stock": 200
-    },
-    "tags": ["food", "drink", "organic", "roasted"],
-    "Others": ["origin:Ethiopia", "roast:medium"]
+    }
   },
   {
     "id": 4,
+    "tags": [
+      "fashion",
+      "men",
+      "classic"
+    ],
     "info": {
       "name": "Leather Wallet",
       "type": "Accessories",
-      "prince": 39.99
+      "price": 39.99
     },
     "meta": {
       "code": "WALLET-L011",
       "stock": 50
-    },
-    "tags": ["fashion", "men", "classic"],
-    "Others": ["material:genuine leather", "color:brown"]
-  },
-  {
-    "id": 5,
-    "info": {
-      "name": "Smart LED Bulb",
-      "type": "Electronics",
-      "prince": 19.20
-    },
-    "meta": {
-      "code": "BULB-S007",
-      "stock": 120
-    },
-    "tags": ["lighting", "smart home", "energy efficient"],
-    "Others": ["wattage:9W", "color temperature:2700K-6500K"]
+    }
   }
 ]
