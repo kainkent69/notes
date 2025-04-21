@@ -8,21 +8,25 @@
     ],
     "info": {
       "name": "Awesome T-Shirt",
-      "type": "Apparel", "price": 25.99 }, "meta": { "code": "TSHIRT-A123",
+      "type": "Apparel",
+      "price": 25.99
+    },
+    "meta": {
+      "code": "TSHIRT-A123",
       "stock": 150
     }
   },
   {
     "id": 2,
     "tags": [
-      "computer accessories",
-      "wireless",
-      "ergonomic"
+      "clothings",
+      "casual",
+      "summer"
     ],
     "info": {
-      "name": "Wireless Mouse Pro",
-      "type": "Electronics",
-      "price": 49.5
+      "name": "Awesome T-Shirt",
+      "type": "Apparel",
+      "price": 25.99
     },
     "meta": {
       "code": "MOUSE-W002",
@@ -45,23 +49,6 @@
     "meta": {
       "code": "COFFEE-B045",
       "stock": 200
-    }
-  },
-  {
-    "id": 4,
-    "tags": [
-      "fashion",
-      "men",
-      "classic"
-    ],
-    "info": {
-      "name": "Leather Wallet",
-      "type": "Accessories",
-      "price": 39.99
-    },
-    "meta": {
-      "code": "WALLET-L011",
-      "stock": 50
     }
   }
 ]

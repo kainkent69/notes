@@ -25,5 +25,11 @@ func Init(db data.Datas, router *http.ServeMux) {
 	// echo
 	router.HandleFunc("POST /echo", Echo)
 	// adding list
-	router.HandleFunc("POST /products", CreateNew(db))
+	router.HandleFunc("POST /products", CreateNew())
+	// get specific
+	router.HandleFunc("GET /product/single", GetSpecific())
+	// edit idea
+	router.HandleFunc("PUT /product/{id}", PatchUpdateProduct())
+	// delete  by id
+	router.HandleFunc("DELETE /product/{id}", DeleteProduct())
 }

@@ -12,8 +12,9 @@ type wrapWritter struct {
 }
 
 func (w *wrapWritter) WriteHeader(status int) {
-	w.ResponseWriter.WriteHeader(w.statusCode)
+	w.ResponseWriter.WriteHeader(status)
 	w.statusCode = status
+	log.Printf("Changed Status To %d", w.statusCode)
 }
 
 func Log(next http.Handler) http.Handler {

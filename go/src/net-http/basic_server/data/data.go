@@ -3,7 +3,6 @@ package data
 import (
 	"bufio"
 	"encoding/json"
-	"iter"
 	"log"
 	"os"
 )
@@ -59,15 +58,4 @@ func DB() Datas {
 		return nil
 	}
 	return db
-}
-
-// get the data
-func (d *Datas) IterThrough() iter.Seq2[int, *Product] {
-	return func(yield func(int, *Product) bool) {
-		for i := range *d {
-			if !yield(i, &((*d)[i])) {
-				return
-			}
-		}
-	}
 }
