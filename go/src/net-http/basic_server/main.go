@@ -84,7 +84,7 @@ func (d *Datas) ByID(w http.ResponseWriter, r *http.Request) {
 func main() {
 	db := DB()
 	if db == nil {
-		log.Fatal("JSON DATABASE Failed to produce")
+  		log.Fatal("JSON DATABASE Failed to produce valid data")
 	}
 	router := http.NewServeMux()
 	server := http.Server{

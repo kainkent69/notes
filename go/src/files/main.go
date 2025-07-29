@@ -1,11 +1,12 @@
 package main
 
 import (
-	"io"
+	"io/fs" 
 	"log"
 )
 
 func main() {
 	log.Println("Reading A file")
-	fs.ReadFile("./hello.txt")
+	fs.ReadFile("./hello.txt",2)
+	
 }

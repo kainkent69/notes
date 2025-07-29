@@ -6,9 +6,10 @@ import (
 	"sync"
 	"time"
 )
-
+// create WaitGroup
 var wg sync.WaitGroup
 
+// calculate the sum of two
 func sumof(from, to int) int {
 	data := 0
 	wg.Add(1)
@@ -20,6 +21,7 @@ func sumof(from, to int) int {
 	return data
 }
 
+// create random  numbers to be used as sample data
 func makeRand() (a, b int) {
 	for {
 		a = rand.Intn(100)
@@ -34,6 +36,7 @@ func makeRand() (a, b int) {
 	}
 	return a, b
 }
+
 
 func main() {
 	started := time.Now()
